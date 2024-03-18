@@ -4,7 +4,6 @@ import React from "react";
 
 const Navbar = () => {
   return (
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
     <div className="w-full fixed top-0 shadow-lg bg-[#03001417] backdrop-blur-md z-50">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[65px]">
