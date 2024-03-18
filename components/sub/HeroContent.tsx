@@ -20,11 +20,11 @@ const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box py-[8px] px-[7px] border border-[#000000] opacity-[0.9]"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+          <SparklesIcon className="text-[#ffffff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Muhammad Difa Dhiyaul Haq Portfolio
           </h1>
         </motion.div>
 
@@ -34,7 +34,7 @@ const HeroContent = () => {
         >
           <span>
             Delivering
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white">
               {" "}
               an exeptional{" "}
             </span>
@@ -44,9 +44,9 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-white my-5 max-w-[600px]"
         >
-          Hello I&apos;m Difa a Full Stack Software Engineer with experience in Website, and Software development. Check out my projects and skills.
+          Hello I&apos;m Muhammad Difa Dhiyaul Haq a Full Stack Engineer with experience in Website, and Software development. Check out my projects and skills.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}

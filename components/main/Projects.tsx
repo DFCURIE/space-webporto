@@ -3,28 +3,23 @@ import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center py-20"
-      id="projects"
-    >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
-      </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+    <div className="flex flex-col items-center py-20" id="projects">
+      <h1 className="text-4xl font-semibold text-white mb-10">My Projects</h1>
+      <div className="max-w-5xl w-full flex flex-col md:flex-row gap-10 px-5 md:px-0">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/wip.jpg"
+          title="Project 1 Title"
+          description="Project 1 Description"
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/wip.jpg"
+          title="Project 2 Title"
+          description="Project 2 Description"
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/wip.jpg"
+          title="Project 3 Title"
+          description="Project 3 Description"
         />
       </div>
     </div>
