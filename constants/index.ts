@@ -1,20 +1,20 @@
-  export const Socials = [
-    {
-      name: "Linkedin",
-      src: "/linkedin.svg",
-    },
-    {
-      name: "Instagram",
-      src: "/instagram.svg",
-    },
-    {
-      name: "Github",
-      src: "/github.svg",
-    },
-  ];
-  
-  
-  
+export const Socials = [
+  {
+    name: "Linkedin",
+    src: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/muhammad-difa-dhiyaul-haq-a40851234/"
+  },
+  {
+    name: "Instagram",
+    src: "/instagram.svg",
+    link: "https://www.instagram.com/dfcurie?igsh=YzJpa2dtaGExemx1"
+  },
+  {
+    name: "Github",
+    src: "/github.svg",
+    link: "https://github.com/DFCURIE"
+  }
+];
   export const Frontend_skill = [
     {
       skill_name: "Html 5",

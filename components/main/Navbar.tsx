@@ -24,20 +24,21 @@ const Navbar = () => {
             <NavLink href="#projects">Projects</NavLink>
           </div>
 
-          <div className="flex items-center">
-            <div className="flex space-x-4">
-              {Socials.map((social, index) => (
-                <Image
-                  src={social.src}
-                  alt={social.name}
-                  key={index}
-                  width={24}
-                  height={24}
-                  className="cursor-pointer hover:opacity-80"
-                />
-              ))}
-            </div>
-          </div>
+          <div id="socialSection" className="flex items-center">
+  <div className="flex space-x-4">
+    {Socials.map((social, index) => (
+      <a href={social.link} target="_blank" rel="noopener noreferrer" key={index}>
+        <Image
+          src={social.src}
+          alt={social.name}
+          width={24}
+          height={24}
+          className="cursor-pointer hover:opacity-80"
+        />
+      </a>
+    ))}
+  </div>
+</div>
 
           <div className="flex md:hidden">
             <button className="p-2 inline-flex items-center justify-center text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
