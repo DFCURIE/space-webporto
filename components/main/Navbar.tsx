@@ -1,21 +1,22 @@
-import { Socials } from "@/constants";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { Socials } from "@/constants";
 
 const Navbar = () => {
   return (
     <div className="w-full fixed top-0 shadow-lg bg-[#03001417] backdrop-blur-md z-50">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[65px]">
-          <a href="#about-me" className="flex-shrink-0">
-            <Image
-              src="/dflogo.png"
-              alt="logo"
-              width={70}
-              height={70}
-              className="cursor-pointer hover:animate-slowspin"
-            />
-          </a>
+  <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-between h-[65px]">
+      <a href="#about-me" className="flex-shrink-0">
+        <Image
+          src="/dflogo.png"
+          alt="logo"
+          width={120}  // Twice the original width (70 * 2)
+          height={120} // Twice the original height (70 * 2)
+          className="cursor-pointer hover:animate-slowspin"
+        />
+      </a>
+
 
           <div className="hidden md:flex space-x-8">
             <NavLink href="#about-me">About me</NavLink>
@@ -25,11 +26,11 @@ const Navbar = () => {
 
           <div className="flex items-center">
             <div className="flex space-x-4">
-              {Socials.map((Social) => (
+              {Socials.map((social, index) => (
                 <Image
-                  src={Social.src}
-                  alt={Social.name}
-                  key={Social.name}
+                  src={social.src}
+                  alt={social.name}
+                  key={index}
                   width={24}
                   height={24}
                   className="cursor-pointer hover:opacity-80"
@@ -71,7 +72,7 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ href, children }) => {
+const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
     <a
       href={href}
@@ -82,7 +83,7 @@ const NavLink = ({ href, children }) => {
   );
 };
 
-const NavLinkMobile = ({ href, children }) => {
+const NavLinkMobile = ({ href, children }: { href: string; children: React.ReactNode }) => {
   return (
     <a
       href={href}
@@ -94,3 +95,4 @@ const NavLinkMobile = ({ href, children }) => {
 };
 
 export default Navbar;
+

@@ -4,42 +4,42 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-      <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full flex flex-row justify-between flex-wrap">
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start mx-auto">
-            <div className="font-bold text-[16px]">Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]">Github</span>
+    <div className="w-full bg-transparent text-gray-200 shadow-lg p-4">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="flex flex-col items-center">
+            <div className="font-bold text-lg mb-4">Community</div>
+            <p className="flex items-center my-2 cursor-pointer">
+              <RxGithubLogo className="w-6 h-6 mr-2" />
+              <span>Github</span>
             </p>
           </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Social Media</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Instagram</span>
+          <div className="flex flex-col items-center">
+            <div className="font-bold text-lg mb-4">Social Media</div>
+            <p className="flex items-center my-2 cursor-pointer">
+              <FaYoutube className="w-6 h-6 mr-2" />
+              <span>Instagram</span>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxLinkedinLogo />
-              <span className="text-[15px] ml-[6px]">Linkedin</span>
+            <p className="flex items-center my-2 cursor-pointer">
+              <RxLinkedinLogo className="w-6 h-6 mr-2" />
+              <span>Linkedin</span>
             </p>
           </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start mx-auto">
-            <div className="font-bold text-[16px]">About</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Become Sponsor</span>
+          <div className="flex flex-col items-center">
+            <div className="font-bold text-lg mb-4">About</div>
+            <p className="flex items-center my-2 cursor-pointer">
+              <span>Become Sponsor</span>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Work with me</span>
+            <p className="flex items-center my-2 cursor-pointer">
+              <span>Work with me</span>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">difamuhammad28@gmail.com</span>
+            <p className="flex items-center my-2 cursor-pointer">
+              <span>difamuhammad28@gmail.com</span>
             </p>
           </div>
         </div>
 
-        <div className="mb-[20px] text-[15px] text-center">
+        <div className="mt-8 text-sm text-center">
           &copy; Muhammad Difa Dhiyaul Haq 2023 Inc. All rights reserved
         </div>
       </div>
