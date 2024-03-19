@@ -1,6 +1,7 @@
 import React from "react";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
-import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col items-center">
             <div className="font-bold text-lg mb-4">Social Media</div>
             <p className="flex items-center my-2 cursor-pointer">
-              <FaYoutube className="w-6 h-6 mr-2" />
+              <FaInstagram className="w-6 h-6 mr-2" />
               <span>Instagram</span>
             </p>
             <p className="flex items-center my-2 cursor-pointer">
